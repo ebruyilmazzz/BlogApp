@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">  <!-- Bootstrap Icons -->
+    
+    <title>BlogApp | Blog</title>  
+   <style>
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .pagination .page-item.active .page-link {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .pagination .page-link {
+            border-radius: 50%;
+            padding: 8px 15px;
+        }
+    </style>
+ 
+</head>
+<body>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a href="/" class="navbar-brand fw-bold">📝 BlogApp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="/" class="nav-link active">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blogs" class="nav-link">Bloglar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/about" class="nav-link">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <!-- Kategoriler -->
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        <i class="bi bi-code-slash"></i> Web Geliştirme
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="bi bi-phone"></i> Mobil Uygulamalar
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="bi bi-bar-chart"></i> Veri Analizi
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <i class="bi bi-laptop"></i> Programlama
+                    </a>
+                </div>
+            </div>
+
+            <!-- Blog Listesi -->
+            <div class="col-md-9">
+                <h1 class="h3 mb-4">Blog Listesi</h1>
+
+                <!-- Blog Kartları -->
+                <div class="card mb-3">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="/static/images/5.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Sıfırdan Uygulamalı React Geliştirme: Hooks, Redux & Firebase</h5>
+                                <p class="card-text">En popüler frontend kütüphanesi React'i baştan sona uygulamalı projelerle öğren. Hooks, Redux, Webpack, Firebase ve Fazlası.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="/static/images/6.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Php ile Sıfırdan İleri Seviye Web Programlama Kursu</h5>
+                                <p class="card-text">Sıfırdan php dersleri ile dinamik php uygulamaları geliştirebilirsin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="/static/images/7.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Asp.Net Core 7.0 ile Sıfırdan İleri Seviye Web Geliştirme</h5>
+                                <p class="card-text">Asp.net core dersleri ile sıfırdan ileri seviyeye uygulamalı projelerle dinamik web uygulamaları geliştirebilirsiniz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="/static/images/8.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">E-Ticaret Kursu: Katmanlı Mimari ile Core Mvc Dersleri</h5>
+                                <p class="card-text">Baştan Sona Core Mvc Dersleri ile Kendi E-Ticaret Siteni Mimari Bakış Açısıyla Hazırla.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a href="#" class="page-link">Geri</a>
+                        </li>
+                        <li class="page-item active">
+                            <a href="#" class="page-link">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a href="#" class="page-link">İleri</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
